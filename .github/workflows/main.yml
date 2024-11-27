@@ -22,4 +22,6 @@ jobs:
       - name: Copy the executable to the artifact directory
         run: copy ./Build/PhysicsGame/Release/Win32/PhysicsGame.exe ./artifact/PhysicsGame
       - name: Create artifact directory
-        run:  actions/upload-artifact@v4
+        run: |
+          dir
+          actions/upload-artifact@v4
